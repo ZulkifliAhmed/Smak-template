@@ -1,0 +1,554 @@
+/* Start Globle Rulls */
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+:root{
+   --main-color: #11343a;
+   --seconde-color: #122a2f;
+   --icon-color: #ffe600;
+   --white-color: #fff;
+   --black-color: #000;
+   --main-transition: .5s ease;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: "Oswald", sans-serif;
+}
+.active{
+    color: var(--icon-color) !important;
+}
+.scroll-down{
+    width: fit-content;
+    padding: 5px 10px;
+    font-size: 20px;
+    color: var(--white-color);
+    background-color: var(--icon-color);
+    border: 1px solid transparent;
+    transition: var(--main-transition);
+}
+.scroll-down:hover{
+    color: var(--icon-color);
+    background-color: transparent;
+    border: 1px solid var(--icon-color);
+}
+.my-titel h5{
+    font-size: 18px;
+}
+.my-titel h3{
+    font-size: 25px;
+}
+.my-titel::after{
+    position: absolute;
+    content: "";
+    width: 150px;
+    height: 3px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: var(--icon-color);
+}
+.title-des{
+    width: 50%;
+}
+.my-btn{
+    font-size: 22px;
+    padding: 5px 25px;
+    color: var(--white-color);
+    background-color: var(--icon-color);
+    border: 1px solid transparent;
+    transition: var(--main-transition);
+}
+.my-btn:hover{
+    color: var(--icon-color) !important;
+    background-color: var(--main-transition);
+    border: 1px solid var(--icon-color);
+}
+img{
+    width: 100%;
+    height: 100%;
+}
+p{
+    opacity: .7;
+}
+.p-opacity{
+    opacity: 1;
+    color: var(--white-color);
+}
+/* End Globle Rulls */
+/* Start Header */
+.navbar{
+    background-color: var(--seconde-color);
+}
+.navbar ul li:not(:first-of-type):before{
+    position: absolute;
+    content: "";
+    width: 7px;
+    height: 7px;
+    top: 50%;
+    margin-left: 5px;
+    border-radius: 50%;
+    background-color: var(--icon-color);
+}
+.navbar a{
+    width: fit-content;
+    color: var(--white-color);
+    transition: var(--main-transition);
+}
+.navbar a:hover{
+    color: var(--icon-color);
+}
+.navbar-toggler{
+    padding: 5px 8px !important;
+    color: var(--seconde-color);
+    background-color: var(--white-color);
+    border: 1px solid var(--white-color);
+    transition: var(--main-transition);
+}
+.navbar-toggler:hover{
+    color: var(--icon-color);
+    background-color: transparent;
+    border: solid 1px var(--icon-color);
+}
+.navbar-toggler .fa-bars{
+    font-size: 25px;
+} 
+/* End Header */
+/* Start Landing */
+.landing{
+    height: 100vh;
+    background-color: var(--main-color);
+}
+.landing-text{
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: var(--seconde-color);
+}
+.landing-text p{
+    font-size: 40px;
+}
+.landing-text a{
+    color: var(--black-color);
+    background-color: var(--icon-color);
+    border: 1px solid transparent;
+    transition: var(--main-transition);
+}
+.landing-text a:hover{
+    color: var(--white-color);
+    background-color: transparent;
+    border-color: var(--icon-color);
+}
+.landing-scroll{
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+/* End Landing */
+/* Start Services */
+.our-services .myicon{
+    padding: 20px;
+    font-size: 20px;
+    color: var(--white-color);
+    background-color: var(--icon-color);
+    transition: var(--main-transition);
+    border: 1px solid transparent;
+}
+.our-services .fa-code,
+.our-services .myicon:hover{
+    color: var(--icon-color);
+    background-color: var(--white-color);
+    border-color: var(--seconde-color);
+}
+.our-services h4{
+    font-size: 16px;
+    color: var(--black-color);
+}
+.services .the-steps{
+    background-color: var(--seconde-color);
+}
+.services .the-steps h3{
+    color: var(--icon-color);
+}
+.services .the-steps p{
+    font-size: 16px;
+}
+.services .the-steps .do-icon{
+    font-size: 25px;
+    color: var(--icon-color);
+}
+.services .the-steps h5{
+    font-size: 16px;
+    color: var(--white-color);
+}
+/* End Services */
+/* Start Works */
+.works li:not(:last-of-type)::after{
+    content:"";
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    border-radius: 100%;
+    background-color: var(--icon-color);
+    top: 40%;
+    margin-left: 10px;
+    transform: translateX(-50%);
+}
+.works li a{
+    color: var(--seconde-color);
+    transition: var(--main-transition);
+}
+.works li a:hover{
+    color: var(--icon-color);
+}
+.works-img .myimg{
+    position: relative;
+}
+.works .w-text p{
+   width: 50%;
+}
+.works .w-text a{
+    font-size: 19px;
+    color: var(--white-color);
+}
+/* End Works */
+/* Start Portfolio */
+.portfolio .row div{
+    width: 220px;
+    height: 200px;
+    margin-bottom: 20px;
+}
+.portfolio .row div img{
+    width: 100%;
+    height: 100%;
+    transition: var(--main-transition);
+}
+.portfolio .row div:hover img{
+    scale: 1.1;
+}
+.portfolio h3{
+    font-size: 22px;
+}
+.portfolio a{
+    font-size: 18px;
+    text-decoration: none;
+}
+.our-number{
+    background-color: var(--seconde-color);
+}
+.our-number .numbers{
+    width: 100%;
+}
+.our-number h3{
+    font-size: 25px;
+    color: var(--white-color);
+}
+.numbers{
+    border: 1px solid var(--icon-color);
+    transition: var(--main-transition);
+}
+.numbers:hover{
+    background-color: var(--main-color);
+    border-color: var(--white-color);
+}
+.numbers h4{
+    font-size: 25px;
+    color: var(--white-color);
+    transition: var(--main-transition);
+}
+.numbers span{
+    font-size: 16px;
+    color: var(--icon-color);
+    transition: var(--main-transition);
+}
+.numbers:hover span{
+    color: var(--white-color);
+}
+/* End Portfolio */
+/* Start About */
+.about-us .us-icon{
+    padding: 20px;
+    font-size: 22px;
+    color: var(--white-color);
+    background-color: var(--icon-color);
+}
+.about-us h5{
+    font-size: 16px;
+}
+/* End About */
+/* Start Team */
+.teame{
+    background-color: whitesmoke;
+}
+.teame .box{
+    background-color: var(--white-color);
+}
+.teame .img-box{
+    transition: var(--main-transition);
+}
+.teame .img-box:hover{
+    transform: translatey(-10px);
+    background-color: var(--white-color);
+}
+.teame h5{
+    font-size: 20px;
+    color: var(--icon-color);
+}
+.team-des{
+    background-color: var(--black-color);
+}
+.team-des .container{
+    width: 50%;
+}
+.team-des::before{
+    position: absolute;
+    content: "";
+    width: 30px;
+    height: 30px;
+    top: -5px;
+    left: 20%;
+    background-color: var(--black-color);
+    rotate: 45deg;
+}
+.team-des .fa-xmark{
+    font-size: 20px;
+    color: var(--white-color);
+    transition: var(--main-transition);
+}
+.team-des .fa-xmark:hover{
+    color: var(--icon-color);
+}
+.team-des .fa-facebook-f,
+.team-des .fa-twitter{
+    font-size: 16px;
+    padding: 5px 8px;
+    margin-right: 10px;
+    border-radius: 5px;
+    color: var(--white-color);
+    border: 1px solid var(--white-color);
+    transition: var(--main-transition);
+}
+.team-des .fa-facebook-f:hover,
+.team-des .fa-twitter:hover{
+    color: var(--icon-color);
+    border: 1px solid var(--icon-color);
+}
+/* End Team */
+/* Strat Clients */
+.clients img{
+    width: 100px;
+}
+.client-slide .fa-angles-left,
+.client-slide .fa-angles-right{
+    padding: 4px 6px;
+    color: var(--white-color);
+    background-color: var(--icon-color);
+    transition: var(--main-transition);
+    border: 1px solid var(--icon-color);
+}
+.client-slide .fa-angles-left:hover,
+.client-slide .fa-angles-right:hover{
+    color: var(--icon-color);
+    background-color: var(--white-color);
+}
+.client-q{
+    background-color: var(--main-color);
+    color: var(--white-color);
+}
+.client-q .container{
+    width: 50%;
+}
+.client-q h5::before{
+   content: "";
+   position: absolute;
+   width: 150px;
+   height: 2px;
+   top: -15px;
+   left: 50%;
+   transform: translateX(-50%);
+   background-color: var(--icon-color);
+}
+.client-q .fa-square{
+    font-size: 10px;
+    margin-left: 5px;
+    transition: var(--main-transition);
+}
+.client-q .fa-square:hover{
+    color: var(--icon-color);
+}
+/* End Clients */
+/* Start Contact */
+.contact-icon{
+    font-size: 23px;
+    color: var(--icon-color);
+}
+.contact h5{
+    font-size: 18px;
+}
+.contact span{
+    opacity: .8;
+}
+.contact-form{
+    background-color: var(--main-color);
+}
+.contact-form h3{
+    font-size: 25px;
+    color: var(--white-color);
+}
+form{
+    margin: 0 auto;
+    width: 70%;
+}
+.contact-form form input{
+    width: 200px;
+}
+.contact-form form textarea{
+    width: 100%;
+    resize: none;
+}
+.contact-form form input,
+.contact-form form textarea{
+    padding: 5px 0px 5px 10px;
+    outline: none;
+    background: transparent;
+    color: var(--white-color);
+    border: 1px solid var(--white-color);
+}
+.contact-form form input::placeholder,
+.contact-form form textarea::placeholder{
+    color: var(--white-color);
+}
+.contact-form form button{
+    font-weight: 400;
+    color: var(--black-color);
+}
+/* End Contact */
+/* Start Copy Right */
+.my-copy-right{
+    background-color: var(--black-color);
+}
+.my-copy-right p{
+    font-size: 16px;
+}
+.my-copy-right p span{
+    color: var(--icon-color);
+}
+.my-copy-right .copy-icon{
+    font-size: 18px;
+    color: var(--white-color);
+}
+.my-copy-right .copy-icon > :hover{
+    color: var(--icon-color);
+}
+/* End Copy Right */
+
+/* Start Medi */
+@media(max-width: 991px){
+    .my-btn{
+        font-size: 19px;
+        padding: 5px 15px;
+    }
+    .navbar ul li:not(:first-of-type):before{
+        display: none;
+    }
+    .landing{
+        height: 70vh;
+    }
+    .landing-text p{
+        font-size: 30px;
+    }
+    .scroll-down{
+        font-size: 16px; 
+    }
+    .title-des{
+        width: 75%;
+    }
+    .works .w-text p{
+        width: 70%;
+    }
+    .team-des .container{
+        width: 60%;
+    }
+    .client-q .container{
+        width: 60%;
+    }.contact-form h3{
+        font-size: 23px;
+    }
+    form{
+        width: 90%;
+    }
+    .contact-form form input{
+        width: 100%;
+    }
+}
+@media(max-width: 675px){
+    .my-titel::after{
+        width: 100px;
+    }
+    .my-titel h5{
+        font-size: 16px;
+    }
+    .my-titel h3{
+        font-size: 18px;
+    }
+    .title-des{
+        width: 100%;
+    }
+    .my-btn{
+        font-size: 16px;
+        padding: 4px 16px;
+    }
+    .landing{
+        height: 50vh;
+    }
+    .landing-text p{
+        font-size: 22px;
+    }
+    .landing-text a{
+        font-size: 14px;
+    }
+    .our-services .myicon{
+        padding: 15px;
+        font-size: 15px;
+    }
+    .works ul{
+        flex-wrap: wrap;
+    }
+    .works li:not(:last-of-type)::after{
+        display: none;
+    }
+    .works .w-text p{
+        width: 100%;
+     }
+    .works li a{
+        display: flex;
+        font-size: 14px;
+        flex-wrap: wrap;
+    }
+    .portfolio h3,
+    .our-number h3{
+        font-size: 18px;
+    }
+    .about-us .us-icon{
+        padding: 15px;
+    }
+    .team-des .container{
+        width: 100%;
+    }
+    .team-des::before{
+        display: none;
+    }
+    .client-q .container{
+        width: 100%;
+    }
+    .client-q h5{
+        font-size: 16px;
+    }
+    .contact-form h3{
+        font-size: 18px;
+    }
+    form{
+        width: 90%;
+    }
+    .contact-form form input{
+        width: 100%;
+    }
+}
+/* End Medi */
